@@ -6,7 +6,7 @@ const app = express();
 
 //const PORT = process.env.PORT || 3030;
 
-app.use(helmet.hidePoweredBy());
+app.use(helmet.hidePoweredBy);
 // your code
 
 
