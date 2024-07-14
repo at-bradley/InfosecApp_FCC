@@ -9,7 +9,8 @@
 	"dependencies": {
 		"express": "^4.14.0",
 		"helmet": "3.21.3",
-		"yarn": "^1.22.22"
+		"yarn": "^1.22.22",
+		"bcrypt":"5.1.1"
 	},
 	"keywords": [
 		"node",
