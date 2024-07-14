@@ -23,6 +23,7 @@ app.use(helmet.contentSecurityPolicy({
 EXCEPT noCache() and contentSecurityPolicy() */
 
 app.use(helmet());
+app.use(helmet(bcrypt));
 
 
 
