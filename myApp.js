@@ -4,7 +4,6 @@ const helmet = require('helmet');
 const app = express();
 const ninetyDaysInSeconds = 90*24*60*60;
 
-
 //const PORT = process.env.PORT || 3030;
 
 app.use(helmet.hidePoweredBy());
@@ -20,7 +19,12 @@ app.use(helmet.contentSecurityPolicy({
   defaultSrc: ["'self'"],
   scriptSrc: ["'self'", 'trusted-cdn.com']
 }}));
-// your code
+/* All of the above is automatically enabled with app.use(helmet());
+EXCEPT noCache() and contentSecurityPolicy() */
+
+app.use(helmet());
+
+
 
 
 
